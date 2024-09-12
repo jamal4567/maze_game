@@ -21,10 +21,11 @@ This project involves creating a 3D maze game using raycasting. The game will be
    cd  maze_game
 
 2. **Install SDL2 Follow the SDL2 installation instructions from the SDL2 [website](https://lazyfoo.net/tutorials/SDL/index.php).**
-3. Build
+3. **Build
    * make
 
-     **  run ./maze  path/to/map/file
+   * run 
+        ./maze  path/to/map/file
 
 ## Contribution
 
