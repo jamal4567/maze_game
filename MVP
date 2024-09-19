@@ -1,0 +1,79 @@
+# THE MAZE PROJECT - MVP
+*(A 3D Game created using SDL2)*
+
+## Minimum Viable Product (MVP) for the Maze Game with SDL2
+
+---
+
+### **Core Features:**
+
+#### **Walls:**
+- **Objective:** Create a 2D array to represent the maze and render walls using SDL2.
+- **Implementation:**
+  - Define a 2D array to store the maze's layout.
+  - Use SDL2 to draw walls by rendering rectangles or lines representing the boundaries.
+  
+#### **Orientation:**
+- **Objective:** Allow the player to control movement and rotation in the maze.
+- **Implementation:**
+  - Use SDL2’s `SDL_Event` to handle arrow key inputs for rotating and moving the player.
+  - Update player orientation and movement based on keyboard inputs.
+
+#### **Move:**
+- **Objective:** Implement basic player movement (forward, backward, left, right).
+- **Implementation:**
+  - Create movement logic where input adjusts player position relative to the current orientation (e.g., moving forward in the direction the player is facing).
+
+#### **Ouch (Collision Detection):**
+- **Objective:** Prevent the player from passing through walls.
+- **Implementation:**
+  - Check for collisions between the player and walls using the maze data.
+  - If a collision occurs, halt player movement or enable sliding along the wall.
+
+#### **Parser:**
+- **Objective:** Load maze data from a text file.
+- **Implementation:**
+  - Create a simple file parser that reads a maze layout into a 2D array.
+  - Allow flexibility for maze modification via external files.
+
+#### **Draw the Map:**
+- **Objective:** Render the maze visually.
+- **Implementation:**
+  - Use the maze's 2D data to draw walls, with distinct colors differentiating walls, the ground, and the ceiling.
+
+#### **Textures:**
+- **Objective:** Enhance visual appeal by adding textures.
+- **Implementation:**
+  - Load and apply textures to walls using SDL2’s texture rendering functions.
+
+---
+
+### **Data Modeling**
+
+#### **User Story:**
+As an end-user, I want to play a maze-solving game using SDL2 where I can move smoothly, complete objectives, and enjoy a visually and aurally engaging experience.
+
+#### **Key Features for End Users:**
+1. **Main Menu:**
+   - Start a new game, load a saved game, or quit.
+   - Difficulty selection (maze size, number of obstacles).
+
+2. **Gameplay:**
+   - Smooth character movement using arrow keys.
+   - Timer to track completion time.
+   - Real-time scoring based on progress and rewards (e.g., collecting coins).
+
+3. **Obstacles & Challenges:**
+   - Encounter obstacles to increase difficulty.
+   - Collect rewards to boost scores.
+
+4. **Completion:**
+   - Display final score and time upon completing the maze.
+   - Option to save progress and replay later.
+
+5. **Audio-Visual Engagement:**
+   - Sound effects for actions (e.g., collecting coins, hitting obstacles).
+   - Background music for immersion.
+   - High-quality graphics and animations to keep the experience enjoyable and interactive.
+
+---
